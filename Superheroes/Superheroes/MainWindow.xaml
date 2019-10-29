@@ -5,8 +5,54 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Superheroes"
         mc:Ignorable="d"
-        Title="Superheroes" MinHeight="450" MaxWidth="800">
+        Title="Superheroes" Height="600"  Width="800">
+
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition ></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition ></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="1">
+            <TextBlock>Nombre</TextBlock>
+            <TextBox></TextBox>
+
+            <TextBlock>Enemigo</TextBlock>
+            <TextBox></TextBox>
+            
+            <TextBlock>Foto</TextBlock>
+            <TextBox></TextBox>
+            
+            <CheckBox>¿Vengador?</CheckBox>
+            
+            <Button>Editar</Button>
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            <Image Source="https://dam.smashmexico.com.mx/wp-content/uploads/2018/08/27150601/daredevilbio_portada.jpg" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="0"></Image>
+
+            <TextBlock Grid.Column="0" Grid.Row="1">Nombre</TextBlock>
+            <TextBlock Grid.Column="1" Grid.Row="1"></TextBlock>
+
+            <TextBlock Grid.Column="0" Grid.Row="2">Enemigo</TextBlock>
+            <TextBlock Grid.Column="1" Grid.Row="2"></TextBlock>
+
+            <TextBlock Grid.Column="0" Grid.Row="3">¿Vengadores?</TextBlock>
+            <TextBlock Grid.Column="1" Grid.Row="3"></TextBlock>
+        </Grid>
         
     </Grid>
 </Window>

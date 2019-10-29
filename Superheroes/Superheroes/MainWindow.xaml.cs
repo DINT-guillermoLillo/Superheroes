@@ -23,6 +23,8 @@ namespace Superheroes
         public MainWindow()
         {
             InitializeComponent();
+
+            editarStackPanel.DataContext = Superheroe.GetSample();
         }
     }
 }

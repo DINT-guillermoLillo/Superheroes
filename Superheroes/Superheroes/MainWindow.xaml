@@ -28,7 +28,7 @@
             
             <CheckBox>¿Vengador?</CheckBox>
             
-            <Button>Editar</Button>
+            <Button Click="Button_Click">Editar</Button>
         </StackPanel>
 
         <Grid Grid.Row="1"  x:Name="leerGrid">
@@ -42,8 +42,8 @@
                 <ColumnDefinition Width="Auto"></ColumnDefinition>
                 <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            
-            <Image Source="https://dam.smashmexico.com.mx/wp-content/uploads/2018/08/27150601/daredevilbio_portada.jpg" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="0"></Image>
+
+            <Image Source="{Binding Path=Foto}" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="0"></Image>
 
             <TextBlock Grid.Column="0" Grid.Row="1">Nombre</TextBlock>
             <TextBlock Grid.Column="1" Grid.Row="1" Text="{Binding Path=Nombre}"></TextBlock>

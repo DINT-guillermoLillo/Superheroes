@@ -20,11 +20,21 @@ namespace Superheroes
     /// </summary>
     public partial class MainWindow : Window
     {
+        Superheroe heroe;
+
         public MainWindow()
         {
             InitializeComponent();
 
-            editarStackPanel.DataContext = Superheroe.GetSample();
+           heroe =Superheroe.GetSample();
+
+            leerGrid.DataContext = heroe;
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            editarStackPanel.DataContext = heroe;
         }
     }
 }

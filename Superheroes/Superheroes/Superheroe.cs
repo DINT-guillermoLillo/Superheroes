@@ -1,14 +1,19 @@
 ﻿using System.ComponentModel;
 
  class Superheroe
-{   
+{
+    private string _Nombre;
+    private string _Enemigo;
+    private string _Foto;
+    private bool _Vengador;
+
     public string Nombre { 
-        get { return this.Nombre; }
+        get { return this._Nombre; }
         set {
 
-            if (this.Nombre != value)
+            if (this._Nombre != value)
             {
-                this.Nombre = value;
+                this._Nombre = value;
                 this.NotifyPropertyChanged("Nombre");
             }
         }
@@ -16,12 +21,12 @@
 
     public string Enemigo
     {
-        get { return this.Enemigo; }
+        get { return this._Enemigo; }
         set
         {
-            if (this.Enemigo != value)
+            if (this._Enemigo != value)
             {
-                this.Enemigo = value;
+                this._Enemigo = value;
                 this.NotifyPropertyChanged("Enemigo");
             }
         }
@@ -29,12 +34,12 @@
 
     public string Foto
     {
-        get { return this.Foto; }
+        get { return this._Foto; }
         set
         {
-            if (this.Foto != value)
+            if (this._Foto != value)
             {
-                this.Foto = value;
+                this._Foto = value;
                 this.NotifyPropertyChanged("Foto");
             }
         }
@@ -42,12 +47,12 @@
 
     public bool Vengador
     {
-        get { return this.Vengador; }
+        get { return this._Vengador; }
         set
         {
-            if (this.Vengador != value)
+            if (this._Vengador != value)
             {
-                this.Vengador = value;
+                this._Vengador = value;
                 this.NotifyPropertyChanged("Vengador");
             }
         }

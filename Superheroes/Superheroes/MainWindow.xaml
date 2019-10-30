@@ -18,13 +18,13 @@
 
         <StackPanel Grid.Column="1" x:Name="editarStackPanel">
             <TextBlock>Nombre</TextBlock>
-            <TextBox Text="{Binding Path=Nombre}"></TextBox>
+            <TextBox Text="{Binding Path=Nombre,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"></TextBox>
 
             <TextBlock>Enemigo</TextBlock>
-            <TextBox Text="{Binding Path=Enemigo}"></TextBox>
+            <TextBox Text="{Binding Path=Enemigo,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"></TextBox>
             
             <TextBlock>Foto</TextBlock>
-            <TextBox Text="{Binding Path=Foto}"></TextBox>
+            <TextBox Text="{Binding Path=Foto,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"></TextBox>
             
             <CheckBox>¿Vengador?</CheckBox>
             
@@ -46,13 +46,13 @@
             <Image Source="{Binding Path=Foto}" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="0"></Image>
 
             <TextBlock Grid.Column="0" Grid.Row="1">Nombre</TextBlock>
-            <TextBlock Grid.Column="1" Grid.Row="1" Text="{Binding Path=Nombre}"></TextBlock>
+            <TextBlock Grid.Column="1" Grid.Row="1" Text="{Binding Path=Nombre, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"></TextBlock>
 
             <TextBlock Grid.Column="0" Grid.Row="2">Enemigo</TextBlock>
-            <TextBlock Grid.Column="1" Grid.Row="2" Text="{Binding Path=Enemigo}"></TextBlock>
+            <TextBlock Grid.Column="1" Grid.Row="2" Text="{Binding Path=Enemigo, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"></TextBlock>
 
             <TextBlock Grid.Column="0" Grid.Row="3">¿Vengadores?</TextBlock>
-            <TextBlock Grid.Column="1" Grid.Row="3" Text="{Binding Path=Vengador}"></TextBlock>
+            <TextBlock Grid.Column="1" Grid.Row="3" Text="{Binding Path=Vengador, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"></TextBlock>
         </Grid>
         
     </Grid>

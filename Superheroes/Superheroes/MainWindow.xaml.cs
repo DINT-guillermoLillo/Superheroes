@@ -29,7 +29,7 @@ namespace Superheroes
            heroe =Superheroe.GetSample();
 
             leerGrid.DataContext = heroe;
-
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
